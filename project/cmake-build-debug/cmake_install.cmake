@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Christian/Documents/bif/Lehrveranstaltungen/SS22/algos/programmierbeispiele/algodat_bsp2/project
+# Install script for directory: C:/Users/Wogra/OneDrive/Dokumente/bif/algodat/algodat_bsp2/project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/Christian/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Users/Wogra/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Christian/Documents/bif/Lehrveranstaltungen/SS22/algos/programmierbeispiele/algodat_bsp2/project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Wogra/OneDrive/Dokumente/bif/algodat/algodat_bsp2/project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

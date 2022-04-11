@@ -68,7 +68,7 @@ void BinarySearchTree::Add(Node* tree, int key) {
     }
 }
 
-// **** Have not looked at how to do FindMin and FindMax recursively ****
+// **** Iterative FindMin / FindMax ****
 int BinarySearchTree::FindMin() const {
     assert(root != nullptr); // assert that tree is not empty
     Node* tmp = root;
@@ -85,6 +85,21 @@ int BinarySearchTree::FindMax() const {
         tmp = tmp->right;
     }
     return tmp->key;
+}
+
+// **** Recursive FindMin / FindMax ****
+int BinarySearchTree::FindMinRec(Node* tree) const {
+    if (tree == nullptr)
+        return INT_MAX;
+    int tmp = tree->key;
+    return tmp < FindMinRec(tree->left) ? tmp : FindMinRec(tree->left);
+}
+
+int BinarySearchTree::FindMaxRec(Node* tree) const {
+    if (tree == nullptr)
+        return INT_MIN;
+    int tmp = tree->key;
+    return tmp > FindMaxRec(tree->right) ? tmp : FindMaxRec(tree->right);
 }
 
 int BinarySearchTree::Sum(Node *tree) const {
@@ -159,7 +174,9 @@ void BinarySearchTree::Stats(Node *tree) const {
     std::cout << "Sum     = " << Sum(tree) << '\n';
     std::cout << "Average = " << Avg(tree) << '\n';
     std::cout << "Minimum = " << FindMin() << '\n';
+    std::cout << "Minimum = " << FindMinRec(tree) << '\n';
     std::cout << "Maximum = " << FindMax() << '\n';
+    std::cout << "Maximum = " << FindMaxRec(tree) << '\n';
     std::cout << "Height  = " << Height(tree) << '\n';
 }
 
@@ -189,6 +206,7 @@ void BinarySearchTree::LogBalance(Node *tree)  { // logs the balance of each nod
         std::cout << "bal(" << tree->key << ") = " << Balance(tree) << "    (AVL violation!)" << '\n';
     LogBalance(tree->right);
 }
+
 
 
 

@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Christian/Documents/bif/Lehrveranstaltungen/SS22/algos/programmierbeispiele/algodat_bsp2/project/cmake-build-debug",
-		"source" : "C:/Users/Christian/Documents/bif/Lehrveranstaltungen/SS22/algos/programmierbeispiele/algodat_bsp2/project"
+		"build" : "C:/Users/Wogra/OneDrive/Dokumente/bif/algodat/algodat_bsp2/project/cmake-build-debug",
+		"source" : "C:/Users/Wogra/OneDrive/Dokumente/bif/algodat/algodat_bsp2/project"
 	},
 	"version" : 
 	{
